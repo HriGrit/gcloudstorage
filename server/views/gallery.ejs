@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <div class="container-12">
+        <%-include("navbar") %>
+
+        <div class="row">
+            <div class="col-sm-6 col-lg-12">
+                <h1 class="text-center mt-4">Welcome to Gallery View</h1>
+                <p class="text-center mt-2">A place to view all your uploaded files</p>
+            </div>
+            <div class="col-sm-6 col-lg-12 d-flex align-items-center justify-content-center" style="min-height: 100px;">
+                <h3>Press on the button to fetch all your files in one go</h3>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-1">
+                <button class="btn btn-primary" id="fetch">Fetch</button>
+            </div>
+        </div>
+
+        <div class="row mt-4" id="viewzone">
+            
+        </div>
+    </div>
+    <script src="fetch.js" defer></script>
+</body>
+</html>

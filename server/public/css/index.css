@@ -1,0 +1,27 @@
+#dropzone{
+    width: 50%;
+    height: 400px;
+    border: 2px dashed #ccc;
+    color: #ccc;
+}
+
+.gallery-image {
+    margin: 10px; /* Space between images */
+    border: 1px solid #ccc; /* Optional border */
+}
+
+
+#viewzone{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px;
+    border: 2px solid #ccc;
+    color: #ccc;
+}
+
+#dropzone:hover {
+    border: 2px dashed #ccc;
+    background: #eee;
+    border-radius: 5px;
+}

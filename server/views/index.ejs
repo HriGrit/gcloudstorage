@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+</head>
+
+<body style="background: linear-gradient(to bottom, #ffffff, #f1f1f1);">
+    <div class="container-12">
+
+        <nav class="navbar-12 navbar-expand navbar-dark" style="background-color: rgb(110, 110, 248);">
+            <ul class="nav navbar-nav col-12" style="font-weight: 700;  font-size: 20px;">
+                <li class="nav-link col-md-2">
+                    <a style="color: black;">Imageinary</a>
+                </li>
+                <li class="nav-item col-md-2">
+                    <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item col-md-2">
+                    <a class="nav-link" href="/gallery">Gallery</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="row">
+            <div class="col-sm-6 col-lg-12">
+                <h1 class="text-center mt-4">Welcome to Imageinary</h1>
+                <p class="text-center mt-2">You can upload your image here and we will do the rest</p>
+            </div>
+            <div class="col-sm-6 col-lg-12 d-flex align-items-center justify-content-center" style="min-height: 100px;">
+                <h3>To get started just drag and drop your pictures</h3>
+            </div>
+        </div>
+
+        <div class="container mt-4">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8" id="dropzone">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <input id="image" type="file" name="image" accept="image/*" class="form-control">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <img id="imageToCrop" class="img-fluid" />
+                        </div>
+                        <div class="col-12 col-lg-6 mt-3 mt-lg-0 text-center text-lg-start">
+                            <button class="btn btn-primary" id="upload">Upload</button>
+                            <button id="cancel" type="button" onclick="resetFileInput()" class="btn btn-secondary">Cancel</button>
+                            <div class="checkbox mt-2">
+                                <label>
+                                    <input type="checkbox" id="webp" name="webp"> Change to WebP?
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="submit.js" defer></script>
+</body>
+
+</html>
